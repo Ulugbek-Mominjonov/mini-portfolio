@@ -1,3 +1,29 @@
+/* Fonts */
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v18-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
 html{
   box-sizing: border-box;
 }
@@ -7,4 +33,58 @@ html{
 body{
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+/* SITE-HEADER */
+.site-header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+.container{
+  max-width: 1360px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.site-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-link{
+  display: flex;
+  align-items: center;
+  color: yellow;
+}
+.logo-img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.logo-name{
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-item + .nav-item{
+  margin-left: 50px;
+}
+.nav-link{
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
 }
