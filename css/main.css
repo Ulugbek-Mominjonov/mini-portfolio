@@ -94,13 +94,18 @@ img{
   color: #fff;
 }
 
-
-/* portfolio */
-
-.portfolio-header{
+/* common style for sections */
+.main-sections{
+  padding-top: 30px;
+}
+.section-header{
   text-align: center;
   margin-bottom: 60px;
 }
+.section-name{
+  text-transform: uppercase;
+}
+/* portfolio */
 .portfolio-list{
   margin: 0;
   padding: 0;
@@ -141,4 +146,26 @@ img{
   height: 300px;
   object-fit: cover;
   object-position: top;
+}
+/* about-section */
+.about-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-date{
+  width: 450px;
+  margin-left: 100px;
+}
+.my-name{
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+.my-info{
+  font-size: 17px;
+  line-height: 25px;
+}
+td:first-child{
+  font-weight: bold;
 }
