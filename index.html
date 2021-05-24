@@ -5,47 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container header-container">
-        <nav class="site-nav">
-          <div class="logo">
-            <a class="logo-link">
-              <img
-                class="logo-img"
-                src="img/IMG_20190430_090002_240.jpg"
-                alt="Logo-img"
-                width="70"
-                height="70"
-              />
-              <strong class="logo-name">Ulug'bek Mo'minjonov</strong>
-            </a>
-          </div>
-
-          <ul class="nav-list">
+      <nav class="site-nav">
+        <div class="container site-nav-container">
+          <ul class="nav-list list">
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a class="nav-link" href="#works">Works</a>
             </li>
-
             <li class="nav-item">
-              <a href="#" class="nav-link">Portfolio</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Contact</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
+      <section class="site-hero">
+        <div class="container hero-container">
+          <div class="hero-date">
+            <h1 class="hero-title">
+              Hi, I am Ulug'bek,
+              Frontend Developer
+            </h1>
+  
+            <p class="hero-info">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+  
+            <a href="#" class="hero-link">Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-      <!-- Portfolio  -->
-      <section class="portfolio main-sections">
+      <!-- works  -->
+      <section class="portfolio main-sections" id="works">
         <div class="container">
           <header class="section-header portfolio-header">
-            <h2 class="section-name portfolio-name">Portfolio</h2>
+            <h2 class="section-name portfolio-name">Works</h2>
             <p class="section-info portfolio-info">Mening frontendda qilgan loyihalarim</p>
           </header>
           <ul class="portfolio-list">
+            <li class="fortfolio-item">
+              <div class="portfolio-date">
+                <h3 class="date-name">Executive landing page</h3>
+                <a class="netlify page-link" href="https://executive-study-free-landing-page.netlify.app/">Netlifyda ko'ring</a>
+                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/executive-study-free-landing-page">Githubda ko'ring</a>
+              </div>
+              <img class="portfolio-img" src="img/executive.jpg" alt="blogr-img" width="300" height="300">
+            </li>
+            
+            <li class="fortfolio-item">
+              <div class="portfolio-date">
+                <h3 class="date-name">Scoot site</h3>
+                <a class="netlify page-link" href="https://scoot-home-page.netlify.app/">Netlifyda ko'ring</a>
+                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/Scoot">Githubda ko'ring</a>
+              </div>
+              <img class="portfolio-img" src="img/scoot.jpg" alt="scoot-img" width="300" height="300">
+            </li>
+
+            <li class="fortfolio-item">
+              <div class="portfolio-date">
+                <h3 class="date-name">WD landing page</h3>
+                <a class="netlify page-link" href="https://wd-landing-page.netlify.app/">Netlifyda ko'ring</a>
+                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/wd">Githubda ko'ring</a>
+              </div>
+              <img class="portfolio-img" src="img/wd.png" alt="wd-img" width="300" height="300">
+            </li>
+            
             <li class="fortfolio-item">
               <div class="portfolio-date">
                 <h3 class="date-name">Blogr landing page</h3>
@@ -53,6 +88,15 @@
                 <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/blog-landing-page">Githubda ko'ring</a>
               </div>
               <img class="portfolio-img" src="img/blogr.png" alt="blogr-img" width="300" height="300">
+            </li>
+
+            <li class="fortfolio-item">
+              <div class="portfolio-date">
+                <h3 class="date-name">Food delivery landing page</h3>
+                <a class="netlify page-link" href="https://landing-food-delivery.netlify.app/">Netlifyda ko'ring</a>
+                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/landing-food-delivery">Githubda ko'ring</a>
+              </div>
+              <img class="portfolio-img" src="img/food.png" alt="food-img" width="300" height="300">
             </li>
 
             <li class="fortfolio-item">
@@ -89,6 +133,15 @@
                 <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/PIXER">Githubda ko'ring</a>
               </div>
               <img class="portfolio-img" src="img/pixer.png" alt="pixer-img" width="300" height="300">
+            </li>
+
+            <li class="fortfolio-item">
+              <div class="portfolio-date">
+                <h3 class="date-name">Portfolio Ui landing page</h3>
+                <a class="netlify page-link" href="https://portfolio-ui-site.netlify.app/">Netlifyda ko'ring</a>
+                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/Portfolio-UI">Githubda ko'ring</a>
+              </div>
+              <img class="portfolio-img" src="img/portfolio-ui.png" alt="portfolio-img" width="300" height="300">
             </li>
 
             <li class="fortfolio-item">
@@ -151,14 +204,14 @@
         </div>
       </section>
 
-      <section class="about main-sections">
+      <section class="about main-sections" id="about">
         <div class="container">
           <header class="section-header about-header">
             <h2 class="section-name about-name">About</h2>
             <p class="section-info about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas?</p>
           </header>
           <section class="about-section">
-            <img class="my-image" src="img/IMG_20190430_090002_240.jpg" alt="my image" width="400" height="400">
+            <img class="my-image" src="img/my-photo.jpg" alt="my image" width="400" height="400">
             <div class="my-date">
               <h2 class="my-name">Ulug'bek Mo'minjonov</h2>
               <p class="my-info">
@@ -183,5 +236,19 @@
         </div>
       </section>
     </main>
+
+  <!-- footer -->
+  <footer class="site-footer" id="blog">
+    <div class="container footer-container">
+      <h2 class="section-name footer-name">Contact</h2>
+      <div class="social-media">
+        <a href="https://github.com/Ulugbek-Mominjonov"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/Mominjonov_U"><i class="fab fa-telegram"></i></a>
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="footer-text">Copyright ©2020 All rights reserved </p>
+    </div>
+  </footer>
   </body>
 </html>

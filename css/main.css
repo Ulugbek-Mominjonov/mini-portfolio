@@ -1,50 +1,45 @@
-/* Fonts */
-/* open-sans-regular - latin */
+/* FONTS  */
+/* heebo-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Heebo';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url('../fonts/heebo-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/heebo-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* open-sans-700 - latin */
+/* heebo-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Heebo';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/open-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v18-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v18-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url('../fonts/heebo-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/heebo-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* heebo-500 - latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/heebo-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/heebo-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Common styles */
 html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-*, *::after,*::before{
+*, *::after, *::before{
   box-sizing: inherit;
 }
 body{
-  margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-img{
-  max-width: 100%;
-  display: block;
-}
-
-/* SITE-HEADER */
-.site-header {
-  /* position: fixed; */
-  /* width: 100%; */
-  background-color: rgba(34, 34, 34, 0.8);
+  margin: 0;
+  margin-top: 69px;
+  font-family: "Heebo", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
 }
 .container{
   max-width: 1340px;
@@ -53,45 +48,92 @@ img{
   margin-right: auto;
   margin-left: auto;
 }
-.header-container{
-  padding-top: 20px;
-  padding-bottom: 20px;
+img{
+  max-width: 100%;
+  display: block;
 }
-.site-nav{
+.list{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo-link{
-  display: flex;
-  align-items: center;
-  color: black;
-}
-.logo-img{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-.logo-name{
-  margin-left: 15px;
-  font-size: 24px;
-  color: yellow;
-}
-
-.nav-list{
-  margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
+  margin: 0;
   list-style-type: none;
 }
+
+/* HEADER STYLE */
+.site-header{
+  background-color: #fff;;
+}
+/* site-nav */
+.site-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  z-index: 99;
+}
+.site-nav-container{
+  padding: 0 100px;
+}
+.nav-list{
+  justify-content: flex-end;
+}
 .nav-item + .nav-item{
-  margin-left: 50px;
+  margin-left: 33px;
 }
 .nav-link{
+  font-weight: 500;
   font-size: 20px;
+  line-height: 29px;
+  color: #000000;
   text-decoration: none;
-  color: #fff;
+}
+
+/* hero  */
+
+/* hero  */
+.hero-container{
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 71px;
+  justify-content: center;
+}
+.hero-container::after{
+  content: "";
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  box-shadow: -5px 8px #EDF7FA;
+  background-image: url("../img/my-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.hero-date{
+  max-width: 40%;
+  margin-right: 115px;
+}
+.hero-title{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+.hero-link{
+  display: inline-block;
+  margin-top: 38px;
+  padding: 17px 21px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #FF6464;
+  border-radius: 2px;
+  text-decoration: none;
 }
 
 /* common style for sections */
@@ -162,10 +204,49 @@ img{
   margin-bottom: 40px;
   font-size: 35px;
 }
+.my-image{
+  border-radius: 50%;
+  width: 300px;
+  height: auto;
+}
 .my-info{
   font-size: 17px;
   line-height: 25px;
 }
 td:first-child{
   font-weight: bold;
+}
+
+/* footer  */
+.site-footer{
+  background-color: rgb(237,247,250);
+}
+.footer-container{
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+.footer-name{
+  margin-bottom: 30px;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+.social-media a{
+  color: #222;
+  margin-right: 35px;
+}
+.social-media i{
+  font-size: 30px;
+}
+.social-media a:last-child{
+  margin-right: 0;
+}
+.footer-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #21243D;
 }
