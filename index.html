@@ -32,12 +32,12 @@
         <div class="container hero-container">
           <div class="hero-date">
             <h1 class="hero-title">
-              Hi, I am Ulug'bek,
-              Frontend Developer
+              Hi, I am Ulug'bek,<br>
+              <span class="alterable-text"></span> Developer
             </h1>
   
             <p class="hero-info">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              Men Farg'ona viloyati Bog'dod tumanidanman. Hozirda TATU farg'ona filiali Dasturiy injinering yo'nalishida 4 - bosqich talabasiman. Hamda tajribali Frontend mutahasis Muhammadjavohir Sur'atov ning mentorlik loyihasi <strong>"Mayoq Hub"</strong> MCHJ a'zosiman.
             </p>
   
             <a href="#" class="hero-link">Download Resume
@@ -52,172 +52,16 @@
         <div class="container">
           <header class="section-header portfolio-header">
             <h2 class="section-name portfolio-name">Works</h2>
-            <p class="section-info portfolio-info">Mening frontendda qilgan loyihalarim</p>
+            <p class="section-info portfolio-info">Mening frontendda qilgan ba'zi loyihalarim</p>
           </header>
-          <ul class="portfolio-list">
-            <li class="fortfolio-item">
+          <ul class="portfolio-list" id="app">
+            <li v-for="project in myProjects" class="fortfolio-item">
               <div class="portfolio-date">
-                <h3 class="date-name">Korzina with js</h3>
-                <a class="netlify page-link" href="https://korzina.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/korzina-with-js">Githubda ko'ring</a>
+                <h3 class="date-name">{{ project.name }}</h3>
+                <a class="netlify page-link" :href="project.demo">Netlifyda ko'ring</a>
+                <a class="github page-link" :href="project.gitHub">Githubda ko'ring</a>
               </div>
-              <img class="portfolio-img" src="img/korzina.png" alt="korzina" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Easybank landing page</h3>
-                <a class="netlify page-link" href="https://easybank-with-bootstrap.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/Easybank-bootsrap">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/easybank.png" alt="blogr-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Executive landing page</h3>
-                <a class="netlify page-link" href="https://executive-study-free-landing-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/executive-study-free-landing-page">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/executive.jpg" alt="blogr-img" width="300" height="300">
-            </li>
-            
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Scoot site</h3>
-                <a class="netlify page-link" href="https://scoot-site.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/Scoot">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/scoot.jpg" alt="scoot-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">WD landing page</h3>
-                <a class="netlify page-link" href="https://wd-landing-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/wd">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/wd.png" alt="wd-img" width="300" height="300">
-            </li>
-            
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Blogr landing page</h3>
-                <a class="netlify page-link" href="https://blogrhome-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/blog-landing-page">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/blogr.png" alt="blogr-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Food delivery landing page</h3>
-                <a class="netlify page-link" href="https://landing-food-delivery.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/landing-food-delivery">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/food.png" alt="food-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Namanganliklar landing page</h3>
-                <a class="netlify page-link" href="https://namanganliklar24home.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/namanganliklar24-web-sayti-header-part">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/namanganliklar.png" alt="blogr-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Rest api landing page</h3>
-                <a class="netlify page-link" href="https://rest-api-countries-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/REST-COUNTRIES-API">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/restapi.png" alt="rest api-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Zendit landing page</h3>
-                <a class="netlify page-link" href="https://zendit-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/ZENDIT">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/zendit.png" alt="zendit-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Pixer landing page</h3>
-                <a class="netlify page-link" href="https://pixer-landing-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/PIXER">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/pixer.png" alt="pixer-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Portfolio Ui landing page</h3>
-                <a class="netlify page-link" href="https://portfolio-ui-site.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/Portfolio-UI">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/portfolio-ui.png" alt="portfolio-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">My Wallet landing page</h3>
-                <a class="netlify page-link" href="https://gallant-kowalevski-377aed.netlify.app/">
-                  Netlifyda ko'ring
-                </a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/ASSETS9">
-                  Githubda ko'ring
-                </a>
-              </div>
-              <img class="portfolio-img" src="img/mywallett.png" alt="my wallet-img" width="300" height="300">
-            </li>
-            
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Message chat landing page</h3>
-                <a class="netlify page-link" href="https://messages-chats.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/assets4">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/message.png" alt="message-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Crowdfounding landing page</h3>
-                <a class="netlify page-link" href="https://crowdfunding-product-page-main.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/crowdfunding-product-page-main">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/crowdfounding.jpg" alt="crowdfounding-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Single price grid landing page</h3>
-                <a class="netlify page-link" href="https://single-price-grid-section-page.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/single-price-grid-component-master">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/single.jpg" alt="single price grid-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">Four card feature landing page</h3>
-                <a class="netlify page-link" href="https://frontend-mentor-four-card-feature.netlify.app/">Netlifyda ko'ring</a>
-                <a class="github page-link" href="https://github.com/Ulugbek-Mominjonov/FOUR-CARD-FEATURE-SECTION">Githubda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/fourcard.jpg" alt="four card-img" width="300" height="300">
-            </li>
-
-            <li class="fortfolio-item">
-              <div class="portfolio-date">
-                <h3 class="date-name">My aditi landing page</h3>
-                <a class="netlify page-link" href="https://myaditi.netlify.app/">Netlifyda ko'ring</a>
-              </div>
-              <img class="portfolio-img" src="img/aditi.png" alt="aditi-img" width="300" height="300">
+              <img class="portfolio-img" :src="project.img" :alt="project.name" width="300" height="300">
             </li>
           </ul>
         </div>
@@ -266,8 +110,14 @@
         <a href=""><i class="fab fa-facebook-square"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
       </div>
-      <p class="footer-text">Copyright ©2020 All rights reserved </p>
+      <p class="footer-text">Copyright ©2021 All rights reserved </p>
     </div>
   </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="js/main.js"></script>
+
   </body>
 </html>

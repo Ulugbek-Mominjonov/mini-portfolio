@@ -52,6 +52,17 @@ img{
   max-width: 100%;
   display: block;
 }
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: .85;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .list{
   display: flex;
   padding: 0;
@@ -135,7 +146,19 @@ img{
   border-radius: 2px;
   text-decoration: none;
 }
-
+.alterable-text {
+  position: relative;
+  margin-right: 6px;
+}
+.alterable-text::after{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 80%;
+  margin-left: 5px;
+  background-color: #222;
+  animation: blink 1.1s infinite;
+}
 /* common style for sections */
 .main-sections{
   padding-top: 30px;
