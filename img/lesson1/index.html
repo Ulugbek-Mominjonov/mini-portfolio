@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Vue instance</title>
+</head>
+<body>
+  <div class="nav-bar"></div>
+
+  <div id="app">
+    <div class="product">
+      <div class="product-img">
+        <img v-bind:src="products.image" :alt="products.image_alt">
+      </div>
+      <div class="product-info">
+        <h1>{{ products.product }}</h1>
+        <p>{{ products.description }}</p>
+        <p v-if="products.inStock">In Stock</p>
+        <p v-else>Out of Stock</p>
+        <span v-show="products.onSale">On Sale</span>
+        <a :href="products.link" target="_blank">More products like this</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="main.js"></script>
+</body>
+</html>

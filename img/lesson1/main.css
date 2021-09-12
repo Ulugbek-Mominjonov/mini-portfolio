@@ -1,0 +1,42 @@
+/* Common styles */
+html{
+  box-sizing: border-box;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: tahoma;
+  color: #282828;
+}
+
+.nav-bar {
+  background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+  height: 60px;
+  margin-bottom: 15px;
+}
+.product {
+  display: flex;
+}
+.product-img {
+  flex-basis: 700px;
+}
+.product-img img{
+  border: 1px solid #d8d8d8;
+  width: 70%;
+  margin: 40px;
+  box-shadow: 0px .5px 1px #d8d8d8;
+}
+.product-info {
+  margin-top: 10px;
+  flex-basis: 500px;
+}
+.product-info h1 {
+  margin-bottom: 16px;
+}
+.product-info p{
+  margin-top: 0;
+  margin-bottom: 8px;
+}

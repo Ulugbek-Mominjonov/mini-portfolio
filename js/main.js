@@ -26,10 +26,58 @@ let app = new Vue ({
   data: {
     myProjects: [
       {
-        name: "Ecommerce",
-        demo: "https://ecommerce-online-web-site.netlify.app/",
-        gitHub: "https://github.com/Ulugbek-Mominjonov/eCommerce",
-        img: "img/e_commerce.png"
+        name: "Planets by vuejs",
+        demo: "https://planets-vuejs.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/planets-by-vuejs",
+        img: "img/planets.png"
+      },
+      {
+        name: "Chopar Pitsa",
+        demo: "https://chopmas-pitsa-order.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/chopmas-pitsa",
+        img: "img/chopar_pitsa.png"
+      },
+      {
+        name: "Mini chat programm",
+        demo: "https://mini-telegram.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/sending-message-with-js",
+        img: "img/chat.png"
+      },
+      {
+        name: "Auto type",
+        demo: "https://ulugbek-mominjonov.github.io/auto-type/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Ulugbek-Mominjonov.github.io/tree/master/auto-type",
+        img: "img/auto_type.png"
+      },
+      {
+        name: "3D Card",
+        demo: "https://ulugbek-mominjonov.github.io/3d-card/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Ulugbek-Mominjonov.github.io/tree/master/3d-card",
+        img: "img/3d-card.png"
+      },
+      {
+        name: "Random switches",
+        demo: "https://ulugbek-mominjonov.github.io/random-switches/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Ulugbek-Mominjonov.github.io/tree/master/random-switches",
+        img: "img/random-switches.png"
+      },
+      {
+        name: "Progress Navigation 2",
+        demo: "https://ulugbek-mominjonov.github.io/progress-navigation-2/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Ulugbek-Mominjonov.github.io/tree/master/progress-navigation-2",
+        img: "img/progress-navigation.png"
+      },
+      {
+        name: "Progress Navigation",
+        demo: "https://ulugbek-mominjonov.github.io/progress-navigation/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Ulugbek-Mominjonov.github.io/tree/master/progress-navigation",
+        img: "img/progress-navigation0.png"
+      },
+      {
+        name: "Cats gallery",
+        demo: "https://cats-gallery.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/cat-gallery",
+        img: "img/cat.png"
       },
       {
         name: "Bookmark",
@@ -44,22 +92,10 @@ let app = new Vue ({
         img: "img/todolist.png"
       },
       {
-        name: "Chopar Pitsa",
-        demo: "https://chopmas-pitsa-order.netlify.app/",
-        gitHub: "https://github.com/Ulugbek-Mominjonov/chopmas-pitsa",
-        img: "img/chopar_pitsa.png"
-      },
-      {
         name: "Korzina",
         demo: "https://korzina.netlify.app/",
         gitHub: "https://github.com/Ulugbek-Mominjonov/korzina-with-js",
         img: "img/korzina.png"
-      },
-      {
-        name: "Easybank landing page",
-        demo: "https://easybank-with-bootstrap.netlify.app/",
-        gitHub: "https://github.com/Ulugbek-Mominjonov/Easybank-bootsrap",
-        img: "img/easybank.png"
       },
       {
         name: "Executive landing page",
@@ -78,6 +114,18 @@ let app = new Vue ({
         demo: "https://pixer-landing-page.netlify.app/",
         gitHub: "https://github.com/Ulugbek-Mominjonov/PIXER",
         img: "img/pixer.png"
+      },
+      {
+        name: "Ecommerce",
+        demo: "https://ecommerce-online-web-site.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/eCommerce",
+        img: "img/e_commerce.png"
+      },
+      {
+        name: "Easybank landing page",
+        demo: "https://easybank-with-bootstrap.netlify.app/",
+        gitHub: "https://github.com/Ulugbek-Mominjonov/Easybank-bootsrap",
+        img: "img/easybank.png"
       },
       {
         name: "WD landing page",
